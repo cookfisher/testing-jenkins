@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>automation</groupId>
@@ -174,18 +174,19 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>${maven-surefire-plugin.version}</version>
                     <configuration>
-                        <!--<properties>-->
-                            <!--<property>-->
-                                <!--<name>junit</name>-->
-                                <!--<value>false</value>-->
-                            <!--</property>-->
-                        <!--</properties>-->
+                        <properties>
+                            <property>
+                                <name>junit</name>
+                                <value>false</value>
+                            </property>
+                        </properties>
                         <threadCount>1</threadCount>
                         <suiteXmlFiles>
                             <!--<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>src/test/resources/demo-store-suite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>src/test/resources/anotation-suite.xml</suiteXmlFile>-->
-                            <suiteXmlFile>src/test/resources/coin-test.xml</suiteXmlFile>
+                            <suiteXmlFile>src/test/resources/testData/coin-test.xml</suiteXmlFile>
+
                         </suiteXmlFiles>
                     </configuration>
 
